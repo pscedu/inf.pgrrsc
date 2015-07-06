@@ -1,0 +1,5 @@
+sense51/dxcsbb[12]:
+  - periodic scrub
+  - add alert for failed disks
+  - mount_slash gets hung up after sft is killed
+  - sense51, supercell-mds0 disk alert
