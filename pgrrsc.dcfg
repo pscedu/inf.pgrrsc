@@ -1,5 +1,7 @@
 # vim: set ft=sh
 
+prof=pittsam
+
 mail_from="root@`hostname`"
 mail_to="yanovich@psc.edu zhihui@psc.edu"
 mp=/supercell
