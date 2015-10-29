@@ -2,8 +2,12 @@
 
 prof=pittsam
 
-mail_from="root@`hostname`"
-mail_to="archproj+alerts@"
+# if [[ $(hostname) =~ psc.edu ]]; then
+mail_from="archproj+mon@psc.edu"
+#else
+#	mail_from="root@`hostname`"
+#fi
+mail_to="archproj+mon@psc.edu"
 mp=/supercell
 
 export PFL_SYSLOG_IDENT=%n-pittsam
