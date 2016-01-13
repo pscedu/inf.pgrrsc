@@ -41,11 +41,11 @@ set -- $(cat <<EOF
     app1.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC%bounce%share
     $(mkclients srcdir=/opt/sam/slash2/PSC%bounce n%d:63)
 
-    firehose5.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%CTL_SOCK_FILE=/var/run/mount_slash.pittsam.firehose5.sock%args=mapfile%share
-    firehose6.psc.edu%mount_slash%tag=2%narg=1%name=mount_slash2%mod=slash2-2.so%PREF_IOS=io@PSC%$tcp_opt%CTL_SOCK_FILE=/var/run/mount_slash2.pittsam.firehose6.sock%mp=/supercell2%args=mapfile,pagecache_maxsize=2g%share
-    firehose6.psc.edu%mount_slash%tag=3%narg=1%name=mount_slash3%mod=slash2-3.so%PREF_IOS=io@PSC%$tcp_opt%CTL_SOCK_FILE=/var/run/mount_slash3.pittsam.firehose6.sock%mp=/supercell3%args=mapfile,pagecache_maxsize=2g%share
-    firehose6.psc.edu%mount_slash%tag=4%narg=1%name=mount_slash4%PREF_IOS=io@PSC%$tcp_opt%CTL_SOCK_FILE=/var/run/mount_slash4.pittsam.firehose6.sock%mp=/supercell4%args=mapfile,pagecache_maxsize=2g%share
-    firehose6.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%CTL_SOCK_FILE=/var/run/mount_slash.pittsam.firehose6.sock%args=mapfile,pagecache_maxsize=2g%share
-    firehose7.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%CTL_SOCK_FILE=/var/run/mount_slash.pittsam.firehose7.sock%args=mapfile%share
+    firehose5.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%args=mapfile,ctlsock=/var/run/mount_slash.pittsam.firehose5.sock%share
+    firehose6.psc.edu%mount_slash%tag=2%narg=1%name=mount_slash2%mod=slash2-2.so%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell2%args=mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash2.pittsam.firehose6.sock%share
+    firehose6.psc.edu%mount_slash%tag=3%narg=1%name=mount_slash3%mod=slash2-3.so%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell3%args=mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash3.pittsam.firehose6.sock%share
+    firehose6.psc.edu%mount_slash%tag=4%narg=1%name=mount_slash4%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell4%args=mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash4.pittsam.firehose6.sock%share
+    firehose6.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%args=mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash.pittsam.firehose6.sock%share
+    firehose7.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%args=mapfile,ctlsock=/var/run/mount_slash.pittsam.firehose7.sock%share
 EOF
 )
