@@ -13,10 +13,5 @@ user remote 151408 local  2740
 user remote 151607 local 17563
 user remote 151636 local 48191
 user remote 152051 local 19178
-group remote 16229 local-uids 19178
-group remote 16229 local-uids 48044
-group remote 16229 local-uids 46485
-group remote 16229 local-uids 48047
-group remote 16077 local-uids 48044
-group remote 16077 local-uids 46485
-group remote 16077 local-uids 48047
+group remote 16229 local-uids 19178 48044 46485 48047
+group remote 16077 local-uids 48044 46485 48047
