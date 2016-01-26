@@ -46,6 +46,6 @@ set -- $(cat <<EOF
     firehose6.psc.edu%mount_slash%tag=3%narg=1%name=mount_slash3%mod=slash2-3.so%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell3%args=mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash3.pittsam.firehose6.sock%share
     firehose6.psc.edu%mount_slash%tag=4%narg=1%name=mount_slash4%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell4%args=mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash4.pittsam.firehose6.sock%share
     firehose6.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%args=mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash.pittsam.firehose6.sock%share
-    firehose7.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%args=mapfile,ctlsock=/var/run/mount_slash.pittsam.firehose7.sock%share
+    dxcesm02.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%CTL_SOCK_FILE=/var/run/mount_slash.pittsam.dxcesm02.sock%srcdir=/usr/local/src/p%args=-omapfile%args=-opagecache_maxsize=2g
 EOF
 )
