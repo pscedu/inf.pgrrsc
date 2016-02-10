@@ -25,27 +25,27 @@ rm -f /etc/system-fips
 tcp_opt='USOCK_MAXSEG=136.142.165.176/28=1480'
 
 set -- $(cat <<EOF
-    supercell-mds0.frank.sam.pitt.edu%slashd%srcdir=/opt/psc/src
+    supercell-mds0.frank.sam.pitt.edu%slashd%share
 
-    supercell0.frank.sam.pitt.edu%sliod%srcdir=/opt/psc/src
-    supercell1.frank.sam.pitt.edu%sliod%srcdir=/opt/psc/src%share
+    supercell0.frank.sam.pitt.edu%sliod%share
+    supercell1.frank.sam.pitt.edu%sliod%share
     $(mksliods sense51.psc.edu 7 'tcp8(bond0:%d)' /var/run/sense51-sliod%d.sock)
     $(mksliods dxcsbb01 8 'tcp8(bond0:%d)' /var/run/\\\\x25h-sliod%d.sock bounce%share)
     $(mksliods dxcsbb02 8 'tcp8(bond0:%d)' /var/run/\\\\x25h-sliod%d.sock bounce%share)
     sense51.psc.edu%mount_slash%args=mapfile%share
 
-    tcga.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC
-    virtuoso.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC
-    login0a.frank.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC%args=acl%bounce
-    login0b.frank.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC%bounce%share
-    app1.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC%bounce%share
-    $(mkclients srcdir=/opt/sam/slash2/PSC%bounce n%d:63)
+    tcga.sam.pitt.edu%mount_slash%share
+    virtuoso.sam.pitt.edu%mount_slash%share
+    login0a.frank.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/src%args=acl%bounce
+    login0b.frank.sam.pitt.edu%mount_slash%bounce%share
+    app1.sam.pitt.edu%mount_slash%bounce%share
+    $(mkclients share%bounce n%d:63)
 
     firehose5.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%args=mapfile,ctlsock=/var/run/mount_slash.pittsam.firehose5.sock%share
     firehose6.psc.edu%mount_slash%tag=2%narg=1%name=mount_slash2%mod=slash2-2.so%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell2%args=mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash2.pittsam.firehose6.sock%share
     firehose6.psc.edu%mount_slash%tag=3%narg=1%name=mount_slash3%mod=slash2-3.so%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell3%args=mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash3.pittsam.firehose6.sock%share
     firehose6.psc.edu%mount_slash%tag=4%narg=1%name=mount_slash4%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell4%args=mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash4.pittsam.firehose6.sock%share
     firehose6.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%args=mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash.pittsam.firehose6.sock%share
-    dxcesm02.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%CTL_SOCK_FILE=/var/run/mount_slash.pittsam.dxcesm02.sock%srcdir=/usr/local/src/p%args=-omapfile%args=-opagecache_maxsize=2g
+    dxcesm02.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%CTL_SOCK_FILE=/var/run/mount_slash.pittsam.dxcesm02.sock%srcdir=/usr/local/src/p%args=mapfile,pagecache_maxsize=2g
 EOF
 )
