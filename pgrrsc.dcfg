@@ -36,7 +36,7 @@ set -- $(cat <<EOF
 
     tcga.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC
     virtuoso.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC
-    login0a.frank.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC%bounce
+    login0a.frank.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC%args=acl%bounce
     login0b.frank.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC%bounce%share
     app1.sam.pitt.edu%mount_slash%srcdir=/opt/sam/slash2/PSC%bounce%share
     $(mkclients srcdir=/opt/sam/slash2/PSC%bounce n%d:63)
