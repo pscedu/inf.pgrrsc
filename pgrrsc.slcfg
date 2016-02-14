@@ -54,31 +54,31 @@ site @PITT {
 site @PSC {
 	site_id		= 1;
 
-	resource sense51s0 { type = standalone_fs; id = 10; nids = sense51-66.psc.edu;     fsroot = /sense51_pool0/slio; self_test = "fshealthtest -u 90 %r"; }
-	resource sense51s1 { type = standalone_fs; id = 11; nids = sense51-66-io1.psc.edu; fsroot = /sense51_pool1/slio; self_test = "fshealthtest -u 90 %r"; }
-	resource sense51s2 { type = standalone_fs; id = 12; nids = sense51-66-io2.psc.edu; fsroot = /sense51_pool2/slio; self_test = "fshealthtest -u 90 %r"; }
-	resource sense51s3 { type = standalone_fs; id = 13; nids = sense51-66-io3.psc.edu; fsroot = /sense51_pool3/slio; self_test = "fshealthtest -u 90 %r"; }
-	resource sense51s4 { type = standalone_fs; id = 14; nids = sense51-66-io4.psc.edu; fsroot = /sense51_pool4/slio; self_test = "fshealthtest -u 90 %r"; }
-	resource sense51s5 { type = standalone_fs; id = 15; nids = sense51-66-io5.psc.edu; fsroot = /sense51_pool5/slio; self_test = "fshealthtest -u 90 %r"; }
-	resource sense51s6 { type = standalone_fs; id = 16; nids = sense51-66-io6.psc.edu; fsroot = /sense51_pool6/slio; self_test = "fshealthtest -u 90 %r"; }
+	resource sense51s0 { type = standalone_fs; id = 10; nids = sense51-66.psc.edu;     fsroot = /sense51_pool0/slio; self_test = "fshealthtest -u 90 %r"; slab_cache_size = 6g; }
+	resource sense51s1 { type = standalone_fs; id = 11; nids = sense51-66-io1.psc.edu; fsroot = /sense51_pool1/slio; self_test = "fshealthtest -u 90 %r"; slab_cache_size = 6g; }
+	resource sense51s2 { type = standalone_fs; id = 12; nids = sense51-66-io2.psc.edu; fsroot = /sense51_pool2/slio; self_test = "fshealthtest -u 90 %r"; slab_cache_size = 6g; }
+	resource sense51s3 { type = standalone_fs; id = 13; nids = sense51-66-io3.psc.edu; fsroot = /sense51_pool3/slio; self_test = "fshealthtest -u 90 %r"; slab_cache_size = 6g; }
+	resource sense51s4 { type = standalone_fs; id = 14; nids = sense51-66-io4.psc.edu; fsroot = /sense51_pool4/slio; self_test = "fshealthtest -u 90 %r"; slab_cache_size = 6g; }
+	resource sense51s5 { type = standalone_fs; id = 15; nids = sense51-66-io5.psc.edu; fsroot = /sense51_pool5/slio; self_test = "fshealthtest -u 90 %r"; slab_cache_size = 6g; }
+	resource sense51s6 { type = standalone_fs; id = 16; nids = sense51-66-io6.psc.edu; fsroot = /sense51_pool6/slio; self_test = "fshealthtest -u 90 %r"; slab_cache_size = 6g; }
 
-	resource sbb1s0 { type = standalone_fs; id = 0x100; nids = dxcsbb01.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool0/slio; }
-	resource sbb1s1 { type = standalone_fs; id = 0x101; nids = dxcsbb01-io1.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool1/slio; }
-	resource sbb1s2 { type = standalone_fs; id = 0x102; nids = dxcsbb01-io2.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool2/slio; }
-	resource sbb1s3 { type = standalone_fs; id = 0x103; nids = dxcsbb01-io3.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool3/slio; }
-	resource sbb1s4 { type = standalone_fs; id = 0x104; nids = dxcsbb01-io4.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool4/slio; }
-	resource sbb1s5 { type = standalone_fs; id = 0x105; nids = dxcsbb01-io5.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool5/slio; }
-	resource sbb1s6 { type = standalone_fs; id = 0x106; nids = dxcsbb01-io6.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool6/slio; }
-	resource sbb1s7 { type = standalone_fs; id = 0x107; nids = dxcsbb01-io7.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool7/slio; }
+	resource sbb1s0 { type = standalone_fs; id = 0x100; nids = dxcsbb01.psc.edu;     self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool0/slio; slab_cache_size = 8g; }
+	resource sbb1s1 { type = standalone_fs; id = 0x101; nids = dxcsbb01-io1.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool1/slio; slab_cache_size = 8g; }
+	resource sbb1s2 { type = standalone_fs; id = 0x102; nids = dxcsbb01-io2.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool2/slio; slab_cache_size = 8g; }
+	resource sbb1s3 { type = standalone_fs; id = 0x103; nids = dxcsbb01-io3.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool3/slio; slab_cache_size = 8g; }
+	resource sbb1s4 { type = standalone_fs; id = 0x104; nids = dxcsbb01-io4.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool4/slio; slab_cache_size = 8g; }
+	resource sbb1s5 { type = standalone_fs; id = 0x105; nids = dxcsbb01-io5.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool5/slio; slab_cache_size = 8g; }
+	resource sbb1s6 { type = standalone_fs; id = 0x106; nids = dxcsbb01-io6.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool6/slio; slab_cache_size = 8g; }
+	resource sbb1s7 { type = standalone_fs; id = 0x107; nids = dxcsbb01-io7.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb1_pool7/slio; slab_cache_size = 8g; }
 
-	resource sbb2s0 { type = standalone_fs; id = 0x200; nids = dxcsbb02.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool0/slio; }
-	resource sbb2s1 { type = standalone_fs; id = 0x201; nids = dxcsbb02-io1.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool1/slio; }
-	resource sbb2s2 { type = standalone_fs; id = 0x202; nids = dxcsbb02-io2.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool2/slio; }
-	resource sbb2s3 { type = standalone_fs; id = 0x203; nids = dxcsbb02-io3.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool3/slio; }
-	resource sbb2s4 { type = standalone_fs; id = 0x204; nids = dxcsbb02-io4.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool4/slio; }
-	resource sbb2s5 { type = standalone_fs; id = 0x205; nids = dxcsbb02-io5.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool5/slio; }
-	resource sbb2s6 { type = standalone_fs; id = 0x206; nids = dxcsbb02-io6.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool6/slio; }
-	resource sbb2s7 { type = standalone_fs; id = 0x207; nids = dxcsbb02-io7.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool7/slio; }
+	resource sbb2s0 { type = standalone_fs; id = 0x200; nids = dxcsbb02.psc.edu;     self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool0/slio; slab_cache_size = 8g; }
+	resource sbb2s1 { type = standalone_fs; id = 0x201; nids = dxcsbb02-io1.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool1/slio; slab_cache_size = 8g; }
+	resource sbb2s2 { type = standalone_fs; id = 0x202; nids = dxcsbb02-io2.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool2/slio; slab_cache_size = 8g; }
+	resource sbb2s3 { type = standalone_fs; id = 0x203; nids = dxcsbb02-io3.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool3/slio; slab_cache_size = 8g; }
+	resource sbb2s4 { type = standalone_fs; id = 0x204; nids = dxcsbb02-io4.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool4/slio; slab_cache_size = 8g; }
+	resource sbb2s5 { type = standalone_fs; id = 0x205; nids = dxcsbb02-io5.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool5/slio; slab_cache_size = 8g; }
+	resource sbb2s6 { type = standalone_fs; id = 0x206; nids = dxcsbb02-io6.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool6/slio; slab_cache_size = 8g; }
+	resource sbb2s7 { type = standalone_fs; id = 0x207; nids = dxcsbb02-io7.psc.edu; self_test = "fshealthtest -u 90 %r"; fsroot = /sbb2_pool7/slio; slab_cache_size = 8g; }
 
 	resource io {
 		type	= cluster_noshare_lfs;
