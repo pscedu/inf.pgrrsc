@@ -45,11 +45,11 @@ set -- $(cat <<EOF
     $(mkclients args=acl%share%bounce n%d:63)
     $(mkclients args=acl%share%bounce n%d:409-424)
 
-    firehose5.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%args=acl,mapfile,ctlsock=/var/run/mount_slash.pittsam.firehose5.sock%share
-    firehose6.psc.edu%mount_slash%tag=2%narg=1%name=mount_slash2%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell2%args=acl,mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash2.pittsam.firehose6.sock%srcdir=/local/src/p2
-    firehose6.psc.edu%mount_slash%tag=3%narg=1%name=mount_slash3%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell3%args=acl,mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash3.pittsam.firehose6.sock%srcdir=/local/src/p3
-    firehose6.psc.edu%mount_slash%tag=4%narg=1%name=mount_slash4%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell4%args=acl,mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash4.pittsam.firehose6.sock%share
-    firehose6.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%args=acl,mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash.pittsam.firehose6.sock%share
-    dxcesm02.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%srcdir=/usr/local/src/p%args=acl,mapfile,pagecache_maxsize=2g,ctlsock=/var/run/mount_slash.pittsam.dxcesm02.sock
+    firehose5.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%args=acl,mapfile,ctlsock=/var/run/\\x25n.pittsam.\\x25h.sock%share
+    firehose6.psc.edu%mount_slash%tag=2%narg=1%name=mount_slash2%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell2%args=acl,mapfile,pagecache_maxsize=2g,ctlsock=/var/run/\\x25n2.pittsam.\\x25h.sock%srcdir=/local/src/p2
+    firehose6.psc.edu%mount_slash%tag=3%narg=1%name=mount_slash3%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell3%args=acl,mapfile,pagecache_maxsize=2g,ctlsock=/var/run/\\x25n3.pittsam.\\x25h.sock%srcdir=/local/src/p3
+    firehose6.psc.edu%mount_slash%tag=4%narg=1%name=mount_slash4%PREF_IOS=io@PSC%$tcp_opt%mp=/supercell4%args=acl,mapfile,pagecache_maxsize=2g,ctlsock=/var/run/\\x25n4.pittsam.\\x25h.sock%share
+    firehose6.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%args=acl,mapfile,pagecache_maxsize=2g,ctlsock=/var/run/\\x25n.pittsam.\\x25h.sock%share
+    dxcesm02.psc.edu%mount_slash%PREF_IOS=io@PSC%$tcp_opt%srcdir=/usr/local/src/p%args=acl,mapfile,pagecache_maxsize=2g,ctlsock=/var/run/\\x25n.pittsam.\\x25h.sock
 EOF
 )
